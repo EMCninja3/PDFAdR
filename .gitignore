@@ -1,0 +1,52 @@
+# ==========================================
+# PyCharm / JetBrains IDEs
+# ==========================================
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# ==========================================
+# Virtual Environments (venv)
+# ==========================================
+.venv/
+.venv-new/
+venv-new/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.Python
+pip-selfcheck.json
+
+# ==========================================
+# Python Bytecode & Caches
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ==========================================
+# Umgebungsvariablen & Lokale Datenbanken
+# ==========================================
+.env
+.env.*
+*.sqlite3
+*.db
+
+# ==========================================
+# Distribution & Packaging
+# ==========================================
+build/
+dist/
+*.egg-info/
+.eggs/
+

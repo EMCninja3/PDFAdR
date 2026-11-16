@@ -38,7 +38,7 @@ def datei_drop(event):
 
 fenster = TkinterDnD.Tk()
 fenster.title("ADR PDF Converter")
-fenster.geometry("500x300")
+fenster.geometry("700x500")
 fenster.resizable(False, False)
 
 hinweis = tk.Label(
@@ -75,10 +75,10 @@ drop_zone = tk.Label(
     image=pdf_icon,
     text="PDF hier hineinziehen",
     compound="top",
-    bg="#e1efff",
+    bg="#000000",
     font=("Arial", 15),
     width=440,
-    height=170
+    height=280
 )
 
 # Wichtig: Bildreferenz behalten
@@ -90,7 +90,10 @@ drop_zone.drop_target_register(DND_FILES)
 drop_zone.dnd_bind("<<Drop>>", datei_drop)
 
 
-drop_zone.pack(padx=25, pady=10)
+drop_zone.pack(fill="both",
+               expand="true",
+               padx=20,
+               pady=20)
 
 drop_zone.drop_target_register(DND_FILES)
 drop_zone.dnd_bind("<<Drop>>", datei_drop)
